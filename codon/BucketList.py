@@ -5,8 +5,8 @@ from typing import ClassVar, Generator
 class BucketList[T]:
     size: int
     a: list[list[T]]
-    BUCKET_RATIO: ClassVar[int] = 8
-    SPLIT_RATIO: ClassVar[int] = 12
+    BUCKET_RATIO: ClassVar[int] = 16
+    SPLIT_RATIO: ClassVar[int] = 24
 
     def __init__(self) -> None:
         self.size = 0
